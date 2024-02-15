@@ -1,8 +1,15 @@
 'use strict'
 
 function factorial(a) {
-    let a = 1;
-    for (let i = 2; i <= a; i++){
-        
+   if (0 > a) {
+    return 'Значение не может быть меньше нуля';
     }
+    if (a === 0) {
+        return 1;
+    }
+    if (a < 1) {
+      return a;
+    }
+    return a * factorial(a - 1); 
 }
+console.log(factorial(50))
