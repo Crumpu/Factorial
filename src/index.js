@@ -1,6 +1,6 @@
 'use strict'
 
-function factorial(a) {
+function factorial(a = 0) {
    if (0 > a) {
     return 'Значение не может быть меньше нуля';
     }
@@ -12,4 +12,4 @@ function factorial(a) {
     }
     return a * factorial(a - 1); 
 }
-console.log(factorial(50))
+console.log(factorial(7))
